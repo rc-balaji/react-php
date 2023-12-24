@@ -8,7 +8,7 @@ function App() {
   const [result, setResult] = useState(0);
 
   const handleAddition = () => {
-    axios.post('http://php-server.000.pe/api/add', { num1, num2 })
+    axios.post('https://php-server.000.pe/api/add', { num1, num2 })
       .then(response => setResult(response.data.result))
       .catch(error => console.error('Error:', error));
   };
